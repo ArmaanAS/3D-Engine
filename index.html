@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body oncontextmenu="return false;">
+		<label for="fader">Field Of View</label>
+		<input type="range" min="0.4" max="2" value="1" 
+			id="FOV" step="0.01" oninput="setFOV(value)"> 
+		</input>
+		
+		<label for="fader">Speed</label>
+		<input type="range" min="0.4" max="2" value="1.2" 
+			id="FOV" step="0.05" oninput="setSpeed(value)"> 
+		</input>
+		
+		<label for="fader">Render Distance</label>
+		<input type="range" min="100" max="600" value="250" 
+			id="FOV" step="50" oninput="setDistance(value)"> 
+		</input>
+
+		<canvas id = "Page" width = "1500" height = "800"> </canvas>
+		<script src = "Geometry.js"> </script>
+		<script src = "Noise.js"> </script>
+		<script src = "Face.js"> </script>
+		<script src = "Point.js"> </script>
+		<script src = "Model.js"> </script>
+		<script src = "Main.js"> </script>
+	</body>
+</html>
